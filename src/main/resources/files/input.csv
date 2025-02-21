@@ -1,0 +1,70 @@
+EmpID,ProjectID,DateFrom,DateTo
+103, 12, 2013-11-01, 2014-01-05
+218, 10, 2012-05-16, NULL
+143, 10, 2009-01-01, 2011-04-27
+
+143, 10, 2009/01/01, 2011-04-27
+143, 10, 2011/04/27, 2011-05-27
+200, 14, 05/20/2015, 05/28/2016
+115, 15, 2013-09-10, 2013-09-30
+115, 15, 2014-01-02, 2014/02/01
+
+# This row is invalid: not enough columns
+300, 16, 2016-01-01
+
+# This row is invalid: random text in date columns
+301, 16, ???, ???
+
+# This row is invalid: missing data
+305, , ,
+
+# This row intentionally has multiple IDs in one column
+115, 12 225, 2013-09-10, 2013-09-30
+
+# Another invalid row with partial numeric junk
+400, 17, 2020-01-01, junk
+
+# Same employee and project repeated with different date ranges
+103, 12, 2014-01-06, 2014-03-01
+103, 12, 04/02/2014, 2014-06-15
+103, 12, 2014/07/01, NULL
+104, 12, 2014-01-08, 2018-01-01
+
+# Another empty row below:
+
+218, 10, 2012/05/20, 2013-08-10
+
+103, 12, 2013-11-01, 2014-01-05
+218, 10, 2012-05-16, NULL
+143, 10, 2009-01-01, 2011-04-27
+
+122, 10, 2009/01/01, 2011-04-27
+143, 10, 2011/04/27, 2011-05-27
+122, 14, 05/20/2015, 05/28/2016
+115, 15, 2013-09-10, 2013-09-30
+115, 15, 2014-01-02, 2014/02/01
+
+# This row is invalid: not enough columns
+300, 16, 2016-01-01
+
+# This row is invalid: random text in date columns
+301, 16, ???, ???
+
+# This row is invalid: missing data
+305, , ,
+
+# This row intentionally has multiple IDs in one column
+115, 12 225, 2013-09-10, 2013-09-30
+
+# Another invalid row with partial numeric junk
+400, 17, 2020-01-01, junk
+
+# Same employee and project repeated with different date ranges
+122, 12, 2014-01-06, 2014-03-01
+103, 5, 04/02/2014, 2014-06-15
+122, 12, 2014/07/01, NULL
+104, 5, 2014-01-08, 2018-01-01
+
+# Another empty row below:
+
+218, 10, 2012/05/20, 2013-08-10

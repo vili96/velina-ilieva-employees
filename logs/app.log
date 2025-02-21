@@ -1,0 +1,145 @@
+2025-02-20 21:11:38.931 [main] WARN  org.example.core.Main - Line 12: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:11:38.934 [main] WARN  org.example.core.Main - Line 13: Invalid number of columns, expected 4 but got 3
+2025-02-20 21:11:38.934 [main] WARN  org.example.core.Main - Line 15: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:11:38.935 [main] ERROR org.example.util.ValidationUtil - Line 16: Date Parsing Exception
+2025-02-20 21:11:38.935 [main] WARN  org.example.core.Main - Line 18: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:11:38.935 [main] WARN  org.example.core.Main - Line 19: Invalid number of columns, expected 4 but got 3
+2025-02-20 21:11:38.935 [main] WARN  org.example.core.Main - Line 21: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:11:38.936 [main] WARN  org.example.util.ValidationUtil - Line 22: Invalid project ID format:  12 225
+2025-02-20 21:11:38.936 [main] WARN  org.example.core.Main - Line 24: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:11:38.937 [main] ERROR org.example.util.ValidationUtil - Line 25: Date Parsing Exception
+2025-02-20 21:11:38.937 [main] WARN  org.example.core.Main - Line 27: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:11:38.938 [main] WARN  org.example.core.Main - Line 33: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:20:30.273 [main] WARN  org.example.core.Main - Line 12: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:20:30.276 [main] WARN  org.example.core.Main - Line 13: Invalid number of columns, expected 4 but got 3
+2025-02-20 21:20:30.276 [main] WARN  org.example.core.Main - Line 15: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:20:30.277 [main] ERROR org.example.util.ValidationUtil - Line 16: Unsupported date format: ???. Expected formats: yyyy-MM-dd, dd-MM-yyyy, MM/dd/yyyy
+2025-02-20 21:20:30.277 [main] WARN  org.example.core.Main - Line 18: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:20:30.277 [main] WARN  org.example.core.Main - Line 19: Invalid number of columns, expected 4 but got 3
+2025-02-20 21:20:30.277 [main] WARN  org.example.core.Main - Line 21: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:20:30.277 [main] WARN  org.example.util.ValidationUtil - Line 22: Invalid project ID format:  12 225
+2025-02-20 21:20:30.278 [main] WARN  org.example.core.Main - Line 24: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:20:30.278 [main] ERROR org.example.util.ValidationUtil - Line 25: Unsupported date format: junk. Expected formats: yyyy-MM-dd, dd-MM-yyyy, MM/dd/yyyy
+2025-02-20 21:20:30.278 [main] WARN  org.example.core.Main - Line 27: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:20:30.279 [main] WARN  org.example.core.Main - Line 33: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:39:56.027 [main] WARN  org.example.core.Main - Line 12: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:39:56.030 [main] WARN  org.example.core.Main - Line 13: Invalid number of columns, expected 4 but got 3
+2025-02-20 21:39:56.031 [main] WARN  org.example.core.Main - Line 15: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:39:56.031 [main] ERROR org.example.util.ValidationUtil - Line 16: Unsupported date format: ???. Expected formats: yyyy-MM-dd, dd-MM-yyyy, MM/dd/yyyy
+2025-02-20 21:39:56.031 [main] WARN  org.example.core.Main - Line 18: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:39:56.031 [main] WARN  org.example.core.Main - Line 19: Invalid number of columns, expected 4 but got 3
+2025-02-20 21:39:56.032 [main] WARN  org.example.core.Main - Line 21: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:39:56.032 [main] WARN  org.example.util.ValidationUtil - Line 22: Invalid project ID format:  12 225
+2025-02-20 21:39:56.032 [main] WARN  org.example.core.Main - Line 24: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:39:56.033 [main] ERROR org.example.util.ValidationUtil - Line 25: Unsupported date format: junk. Expected formats: yyyy-MM-dd, dd-MM-yyyy, MM/dd/yyyy
+2025-02-20 21:39:56.033 [main] WARN  org.example.core.Main - Line 27: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:39:56.034 [main] WARN  org.example.core.Main - Line 33: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:45:02.481 [main] WARN  org.example.core.Main - Line 12: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:45:02.485 [main] WARN  org.example.core.Main - Line 13: Invalid number of columns, expected 4 but got 3
+2025-02-20 21:45:02.485 [main] WARN  org.example.core.Main - Line 15: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:45:02.486 [main] ERROR org.example.util.ValidationUtil - Line 16: Unsupported date format: ???. Expected formats: yyyy-MM-dd, dd-MM-yyyy, MM/dd/yyyy
+2025-02-20 21:45:02.486 [main] WARN  org.example.core.Main - Line 18: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:45:02.486 [main] WARN  org.example.core.Main - Line 19: Invalid number of columns, expected 4 but got 3
+2025-02-20 21:45:02.486 [main] WARN  org.example.core.Main - Line 21: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:45:02.486 [main] WARN  org.example.util.ValidationUtil - Line 22: Invalid project ID format:  12 225
+2025-02-20 21:45:02.486 [main] WARN  org.example.core.Main - Line 24: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:45:02.487 [main] ERROR org.example.util.ValidationUtil - Line 25: Unsupported date format: junk. Expected formats: yyyy-MM-dd, dd-MM-yyyy, MM/dd/yyyy
+2025-02-20 21:45:02.487 [main] WARN  org.example.core.Main - Line 27: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:45:02.488 [main] WARN  org.example.core.Main - Line 33: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:45:02.496 [main] INFO  org.example.core.Main - Total analysis for 1st approach time: 7 ms
+2025-02-20 21:45:02.497 [main] INFO  org.example.core.Main - Starting collaboration analysis for 12 work duration records
+2025-02-20 21:45:02.499 [main] INFO  org.example.core.Main - Grouped 12 records into 4 projects. Time taken: 2 ms
+2025-02-20 21:45:02.500 [main] INFO  org.example.core.Main - Calculated all collaborations. Time taken: 1 ms
+2025-02-20 21:45:02.502 [main] INFO  org.example.core.Main - Found maximum collaboration. Time taken: 1 ms
+2025-02-20 21:45:02.502 [main] INFO  org.example.core.Main - Total analysis for 2nd approach time: 5 ms
+2025-02-20 21:45:02.502 [main] INFO  org.example.core.Main - Longest collaboration: Employees 103 and 104 worked together for 1280 days
+2025-02-20 21:45:34.483 [main] INFO  org.example.core.Main - Total analysis for 1st approach time: 10 ms
+2025-02-20 21:45:34.487 [main] INFO  org.example.core.Main - Starting collaboration analysis for 2 work duration records
+2025-02-20 21:45:34.489 [main] INFO  org.example.core.Main - Grouped 2 records into 1 projects. Time taken: 2 ms
+2025-02-20 21:45:34.491 [main] INFO  org.example.core.Main - Calculated all collaborations. Time taken: 1 ms
+2025-02-20 21:45:34.493 [main] INFO  org.example.core.Main - Found maximum collaboration. Time taken: 1 ms
+2025-02-20 21:45:34.494 [main] INFO  org.example.core.Main - Total analysis for 2nd approach time: 7 ms
+2025-02-20 21:45:34.494 [main] INFO  org.example.core.Main - Longest collaboration: Employees 104 and 103 worked together for 1825 days
+2025-02-20 21:47:20.409 [main] INFO  org.example.core.Main - Total analysis for 1st approach time: 8 ms
+2025-02-20 21:47:20.413 [main] INFO  org.example.core.Main - Starting collaboration analysis for 2 work duration records
+2025-02-20 21:47:20.415 [main] INFO  org.example.core.Main - Grouped 2 records into 1 projects. Time taken: 2 ms
+2025-02-20 21:47:20.416 [main] INFO  org.example.core.Main - Calculated all collaborations. Time taken: 1 ms
+2025-02-20 21:47:20.418 [main] INFO  org.example.core.Main - Found maximum collaboration. Time taken: 1 ms
+2025-02-20 21:47:20.418 [main] INFO  org.example.core.Main - Total analysis for 2nd approach time: 6 ms
+2025-02-20 21:47:20.418 [main] INFO  org.example.core.Main - Longest collaboration: Employees 104 and 103 worked together for 1826 days
+2025-02-20 21:47:34.834 [main] WARN  org.example.core.Main - Line 12: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:47:34.838 [main] WARN  org.example.core.Main - Line 13: Invalid number of columns, expected 4 but got 3
+2025-02-20 21:47:34.838 [main] WARN  org.example.core.Main - Line 15: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:47:34.838 [main] ERROR org.example.util.ValidationUtil - Line 16: Unsupported date format: ???. Expected formats: yyyy-MM-dd, dd-MM-yyyy, MM/dd/yyyy
+2025-02-20 21:47:34.838 [main] WARN  org.example.core.Main - Line 18: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:47:34.839 [main] WARN  org.example.core.Main - Line 19: Invalid number of columns, expected 4 but got 3
+2025-02-20 21:47:34.839 [main] WARN  org.example.core.Main - Line 21: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:47:34.839 [main] WARN  org.example.util.ValidationUtil - Line 22: Invalid project ID format:  12 225
+2025-02-20 21:47:34.839 [main] WARN  org.example.core.Main - Line 24: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:47:34.840 [main] ERROR org.example.util.ValidationUtil - Line 25: Unsupported date format: junk. Expected formats: yyyy-MM-dd, dd-MM-yyyy, MM/dd/yyyy
+2025-02-20 21:47:34.840 [main] WARN  org.example.core.Main - Line 27: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:47:34.840 [main] WARN  org.example.core.Main - Line 33: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:47:34.849 [main] INFO  org.example.core.Main - Total analysis for 1st approach time: 8 ms
+2025-02-20 21:47:34.849 [main] INFO  org.example.core.Main - Starting collaboration analysis for 12 work duration records
+2025-02-20 21:47:34.851 [main] INFO  org.example.core.Main - Grouped 12 records into 4 projects. Time taken: 2 ms
+2025-02-20 21:47:34.852 [main] INFO  org.example.core.Main - Calculated all collaborations. Time taken: 1 ms
+2025-02-20 21:47:34.854 [main] INFO  org.example.core.Main - Found maximum collaboration. Time taken: 2 ms
+2025-02-20 21:47:34.854 [main] INFO  org.example.core.Main - Total analysis for 2nd approach time: 5 ms
+2025-02-20 21:47:34.854 [main] INFO  org.example.core.Main - Longest collaboration: Employees 103 and 104 worked together for 1281 days
+2025-02-20 21:50:41.405 [main] WARN  org.example.core.Main - Line 12: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:50:41.411 [main] WARN  org.example.core.Main - Line 13: Invalid number of columns, expected 4 but got 3
+2025-02-20 21:50:41.412 [main] WARN  org.example.core.Main - Line 15: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:50:41.413 [main] ERROR org.example.util.ValidationUtil - Line 16: Unsupported date format: ???. Expected formats: yyyy-MM-dd, dd-MM-yyyy, MM/dd/yyyy
+2025-02-20 21:50:41.413 [main] WARN  org.example.core.Main - Line 18: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:50:41.413 [main] WARN  org.example.core.Main - Line 19: Invalid number of columns, expected 4 but got 3
+2025-02-20 21:50:41.413 [main] WARN  org.example.core.Main - Line 21: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:50:41.414 [main] WARN  org.example.util.ValidationUtil - Line 22: Invalid project ID format:  12 225
+2025-02-20 21:50:41.414 [main] WARN  org.example.core.Main - Line 24: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:50:41.416 [main] ERROR org.example.util.ValidationUtil - Line 25: Unsupported date format: junk. Expected formats: yyyy-MM-dd, dd-MM-yyyy, MM/dd/yyyy
+2025-02-20 21:50:41.416 [main] WARN  org.example.core.Main - Line 27: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:50:41.418 [main] WARN  org.example.core.Main - Line 33: Invalid number of columns, expected 4 but got 1
+2025-02-20 21:50:41.433 [main] INFO  org.example.core.Main - Total analysis for 1st approach time: 15 ms
+2025-02-20 21:50:41.433 [main] INFO  org.example.core.Main - Starting collaboration analysis for 12 work duration records
+2025-02-20 22:08:31.172 [main] INFO  org.example.core.Main - Grouped 12 records into 4 projects. Time taken: 1069738 ms
+2025-02-20 22:08:31.174 [main] INFO  org.example.core.Main - Calculated all collaborations. Time taken: 2 ms
+2025-02-20 22:08:31.176 [main] INFO  org.example.core.Main - Found maximum collaboration. Time taken: 1 ms
+2025-02-20 22:08:31.177 [main] INFO  org.example.core.Main - Total analysis for 2nd approach time: 1069744 ms
+2025-02-20 22:08:31.177 [main] INFO  org.example.core.Main - Longest collaboration: Employees 103 and 104 worked together for 1281 days
+2025-02-20 22:08:37.476 [main] WARN  org.example.core.Main - Line 12: Invalid number of columns, expected 4 but got 1
+2025-02-20 22:08:37.479 [main] WARN  org.example.core.Main - Line 13: Invalid number of columns, expected 4 but got 3
+2025-02-20 22:08:37.479 [main] WARN  org.example.core.Main - Line 15: Invalid number of columns, expected 4 but got 1
+2025-02-20 22:08:37.479 [main] ERROR org.example.util.ValidationUtil - Line 16: Unsupported date format: ???. Expected formats: yyyy-MM-dd, dd-MM-yyyy, MM/dd/yyyy
+2025-02-20 22:08:37.480 [main] WARN  org.example.core.Main - Line 18: Invalid number of columns, expected 4 but got 1
+2025-02-20 22:08:37.480 [main] WARN  org.example.core.Main - Line 19: Invalid number of columns, expected 4 but got 3
+2025-02-20 22:08:37.480 [main] WARN  org.example.core.Main - Line 21: Invalid number of columns, expected 4 but got 1
+2025-02-20 22:08:37.480 [main] WARN  org.example.util.ValidationUtil - Line 22: Invalid project ID format:  12 225
+2025-02-20 22:08:37.481 [main] WARN  org.example.core.Main - Line 24: Invalid number of columns, expected 4 but got 1
+2025-02-20 22:08:37.481 [main] ERROR org.example.util.ValidationUtil - Line 25: Unsupported date format: junk. Expected formats: yyyy-MM-dd, dd-MM-yyyy, MM/dd/yyyy
+2025-02-20 22:08:37.481 [main] WARN  org.example.core.Main - Line 27: Invalid number of columns, expected 4 but got 1
+2025-02-20 22:08:37.482 [main] WARN  org.example.core.Main - Line 33: Invalid number of columns, expected 4 but got 1
+2025-02-20 22:08:37.493 [main] INFO  org.example.core.Main - Total analysis for 1st approach time: 10 ms
+2025-02-20 22:08:37.493 [main] INFO  org.example.core.Main - Starting collaboration analysis for 12 work duration records
+2025-02-20 22:08:37.496 [main] INFO  org.example.core.Main - Grouped 12 records into 4 projects. Time taken: 3 ms
+2025-02-20 22:08:37.497 [main] INFO  org.example.core.Main - Calculated all collaborations. Time taken: 1 ms
+2025-02-20 22:08:37.499 [main] INFO  org.example.core.Main - Found maximum collaboration. Time taken: 1 ms
+2025-02-20 22:08:37.499 [main] INFO  org.example.core.Main - Total analysis for 2nd approach time: 6 ms
+2025-02-20 22:08:37.499 [main] INFO  org.example.core.Main - Longest collaboration: Employees 103 and 104 worked together for 1281 days
+2025-02-20 22:13:14.661 [main] WARN  org.example.core.Main - Line 12: Invalid number of columns, expected 4 but got 1
+2025-02-20 22:13:14.664 [main] WARN  org.example.core.Main - Line 13: Invalid number of columns, expected 4 but got 3
+2025-02-20 22:13:14.665 [main] WARN  org.example.core.Main - Line 15: Invalid number of columns, expected 4 but got 1
+2025-02-20 22:13:14.665 [main] ERROR org.example.util.ValidationUtil - Line 16: Unsupported date format: ???. Expected formats: yyyy-MM-dd, dd-MM-yyyy, MM/dd/yyyy
+2025-02-20 22:13:14.665 [main] WARN  org.example.core.Main - Line 18: Invalid number of columns, expected 4 but got 1
+2025-02-20 22:13:14.665 [main] WARN  org.example.core.Main - Line 19: Invalid number of columns, expected 4 but got 3
+2025-02-20 22:13:14.666 [main] WARN  org.example.core.Main - Line 21: Invalid number of columns, expected 4 but got 1
+2025-02-20 22:13:14.666 [main] WARN  org.example.util.ValidationUtil - Line 22: Invalid project ID format:  12 225
+2025-02-20 22:13:14.666 [main] WARN  org.example.core.Main - Line 24: Invalid number of columns, expected 4 but got 1
+2025-02-20 22:13:14.667 [main] ERROR org.example.util.ValidationUtil - Line 25: Unsupported date format: junk. Expected formats: yyyy-MM-dd, dd-MM-yyyy, MM/dd/yyyy
+2025-02-20 22:13:14.667 [main] WARN  org.example.core.Main - Line 27: Invalid number of columns, expected 4 but got 1
+2025-02-20 22:13:14.668 [main] WARN  org.example.core.Main - Line 33: Invalid number of columns, expected 4 but got 1
+2025-02-20 22:13:14.678 [main] INFO  org.example.core.Main - Total analysis for 1st approach time: 10 ms
+2025-02-20 22:13:14.678 [main] INFO  org.example.core.Main - Starting collaboration analysis for 12 work duration records
+2025-02-20 22:13:14.681 [main] INFO  org.example.core.Main - Grouped 12 records into 4 projects. Time taken: 3 ms
+2025-02-20 22:13:14.683 [main] INFO  org.example.core.Main - Calculated all collaborations. Time taken: 2 ms
+2025-02-20 22:13:14.685 [main] INFO  org.example.core.Main - Found maximum collaboration. Time taken: 2 ms
+2025-02-20 22:13:14.685 [main] INFO  org.example.core.Main - Total analysis for 2nd approach time: 7 ms
+2025-02-20 22:13:14.685 [main] INFO  org.example.core.Main - Longest collaboration: Employees 103 and 104 worked together for 1281 days
