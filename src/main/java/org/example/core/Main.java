@@ -1,10 +1,10 @@
 package org.example.core;
 
 import lombok.extern.log4j.Log4j2;
+import org.example.comparator.EmployeeCollaborationComparator;
 import org.example.exception.CsvValidationException;
 import org.example.model.EmployeePair;
 import org.example.model.EmployeeWorkDuration;
-import org.example.model.PairCollaborationTime;
 import org.example.ui.EmployeeCollaborationUI;
 
 import javax.swing.*;
@@ -96,73 +96,106 @@ public class Main {
         }
     }
 
-
-    public static Map<EmployeePair, Map<Integer, Long>> findLongestCollaboration(Set<EmployeeWorkDuration> workDurations) {
+    public static SortedMap<EmployeePair, Map<Integer, Long>> findLongestCollaboration(Set<EmployeeWorkDuration> workDurations) {
         var startTime = System.currentTimeMillis();
-        var workDurationsByProjectIdMap = workDurations.stream()
-                .collect(Collectors.groupingBy(EmployeeWorkDuration::getProjectId));
 
-        var collaborationTimeByPairAndProjectMap = new ConcurrentHashMap<EmployeePair, Long>();
+        var workDurationsByProjectIdMap = groupWorkDurationsByProject(workDurations);
+
         var collaborationsByProjectMap = new ConcurrentHashMap<EmployeePair, Map<Integer, Long>>();
-
         workDurationsByProjectIdMap.entrySet().parallelStream()
                 .forEach(entry -> {
                     var projectId = entry.getKey();
                     var durationsInProject = entry.getValue();
-                    processOneProject(projectId, durationsInProject, collaborationTimeByPairAndProjectMap, collaborationsByProjectMap);
+                    processOneProject(projectId, durationsInProject, collaborationsByProjectMap);
                 });
 
-        var result = collaborationTimeByPairAndProjectMap.entrySet().stream()
-                .max(Map.Entry.comparingByValue())
-                .map(e -> new PairCollaborationTime(e.getKey(), e.getValue()))
-                .orElse(new PairCollaborationTime(new EmployeePair(0, 0), 0));
+        var comparator = new EmployeeCollaborationComparator(collaborationsByProjectMap);
+        var sortedCollaborations = new TreeMap<EmployeePair, Map<Integer, Long>>(comparator);
+        sortedCollaborations.putAll(collaborationsByProjectMap);
 
-        logResult(result);
-        log.info(PROCESSING_TIME, System.currentTimeMillis() - startTime);
+        var fullySorted = buildFullySortedMap(sortedCollaborations, comparator);
 
-        return collaborationsByProjectMap;
+        logTopCollaboration(fullySorted);
+
+        log.info(PROCESSING_TIME, (System.currentTimeMillis() - startTime));
+
+        return fullySorted;
     }
 
-    private static void logResult(PairCollaborationTime result) {
-        if (result.getDaysWorkedTogether() > 0) {
-            log.info(LONGEST_COLLABORATION,
-                    result.getPair().getEmp1(),
-                    result.getPair().getEmp2(),
-                    result.getDaysWorkedTogether());
+    private static TreeMap<EmployeePair, Map<Integer, Long>> buildFullySortedMap(
+            TreeMap<EmployeePair, Map<Integer, Long>> sortedCollaborations,
+            Comparator<EmployeePair> comparator
+    ) {
+        return sortedCollaborations.entrySet()
+                .stream()
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey,
+                        e -> e.getValue().entrySet().stream()
+                                .sorted(
+                                        Map.Entry.<Integer, Long>comparingByValue().reversed()
+                                                .thenComparing(Map.Entry.comparingByKey())
+                                )
+                                .collect(Collectors.toMap(
+                                        Map.Entry::getKey,
+                                        Map.Entry::getValue,
+                                        (oldVal, newVal) -> oldVal,
+                                        LinkedHashMap::new
+                                )),
+                        (oldVal, newVal) -> oldVal,
+                        () -> new TreeMap<>(comparator)
+                ));
+    }
+
+    private static Map<Integer, List<EmployeeWorkDuration>> groupWorkDurationsByProject(Set<EmployeeWorkDuration> workDurations) {
+        return workDurations.stream()
+                .collect(Collectors.groupingBy(EmployeeWorkDuration::getProjectId));
+    }
+
+    private static void logTopCollaboration(SortedMap<EmployeePair, Map<Integer, Long>> sortedCollaborations) {
+        if (!sortedCollaborations.isEmpty()) {
+            var topEntry = sortedCollaborations.firstEntry();
+
+            var pair = topEntry.getKey();
+            var projectTimes = topEntry.getValue();
+            var totalTime = projectTimes.values().stream().mapToLong(Long::longValue).sum();
+
+            log.info(TOP_COLLABORATION_SUMMARY, pair.getEmp1(), pair.getEmp2(), totalTime, projectTimes.size());
         } else {
-            log.info(NO_COLLABORATIONS);
+            log.info(NO_COLLABORATIONS_FOUND);
         }
     }
 
     private static void processOneProject(int projectId,
                                           List<EmployeeWorkDuration> durationsInProject,
-                                          Map<EmployeePair, Long> globalCollaborations,
                                           Map<EmployeePair, Map<Integer, Long>> projectCollaborations) {
         var byEmployee = durationsInProject.stream()
                 .collect(Collectors.groupingBy(EmployeeWorkDuration::getEmpId));
 
-        var mergedByEmployee = byEmployee.entrySet().stream()
+        var mergedDurationsByEmployee = byEmployee.entrySet().stream()
                 .collect(Collectors.toMap(
                         Map.Entry::getKey,
                         e -> mergeIntervalsForOneEmployee(e.getValue())
                 ));
 
-        var employeeIds = new ArrayList<>(mergedByEmployee.keySet());
+        var employeeIds = new ArrayList<>(mergedDurationsByEmployee.keySet());
         Collections.sort(employeeIds);
 
-        for (var i = 0; i < employeeIds.size() - 1; i++) {
-            for (var j = i + 1; j < employeeIds.size(); j++) {
+        for (int i = 0; i < employeeIds.size() - 1; i++) {
+            for (int j = i + 1; j < employeeIds.size(); j++) {
                 var emp1 = employeeIds.get(i);
                 var emp2 = employeeIds.get(j);
                 var overlap = calculateOverlapBetweenTwoEmployees(
-                        mergedByEmployee.get(emp1),
-                        mergedByEmployee.get(emp2)
+                        mergedDurationsByEmployee.get(emp1),
+                        mergedDurationsByEmployee.get(emp2)
                 );
+
                 if (overlap > 0) {
                     var pair = new EmployeePair(emp1, emp2);
-                    globalCollaborations.merge(pair, overlap, Long::sum);
-                    projectCollaborations.computeIfAbsent(pair, k -> new ConcurrentHashMap<>())
-                            .put(projectId, overlap);
+
+                    projectCollaborations
+                            .computeIfAbsent(pair, k -> new ConcurrentHashMap<>())
+                            .merge(projectId, overlap, Long::sum);
+
                     log.debug(PROJECT_OVERLAP, projectId, emp1, emp2, overlap);
                 }
             }

@@ -7,8 +7,10 @@ public class UIConstants {
     public static final String WINDOW_TITLE = "Employee Collaboration Analyzer";
     public static final Dimension WINDOW_SIZE = new Dimension(1000, 600);
     public static final Dimension MIN_WINDOW_SIZE = new Dimension(600, 400);
+    public static final String NO_DATA_MESSAGE = "No collaboration data found";
 
     // Labels and text
+    public static final String EMPTY_SPACE = " ";
     public static final String TITLE_TEXT = "Employee Collaboration Analysis";
     public static final String BUTTON_TEXT = "Choose CSV File";
     // Table columns
@@ -42,6 +44,5 @@ public class UIConstants {
     public static final int BUTTON_HORIZONTAL_PADDING = 15;
     public static final String CONGRATULATORY_MESSAGE =
             "<html>Congratulations to the most devoted team players!<br/>Employees %d and %d have worked on project %d for %d days!</html>";
-
 
 }

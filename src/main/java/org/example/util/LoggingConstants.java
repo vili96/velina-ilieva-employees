@@ -5,10 +5,12 @@ public class LoggingConstants {
     public static final String CSV_PROCESSING_ERROR = "CSV Processing Error: {}";
     public static final String IO_ERROR = "IO Error: Failed to read file";
     public static final String PROCESSING_TIME = "Finding longest collaboration took: {} ms";
-    public static final String LONGEST_COLLABORATION = "Longest collaboration: Employees {} and {} worked together for {} days";
-    public static final String NO_COLLABORATIONS = "No collaborations found";
     public static final String INVALID_COLUMNS = "Line {}: Invalid number of columns, expected {} but got {}";
     public static final String CSV_READ_ERROR = "Failed to read CSV file: {}";
+
+    public static final String TOP_COLLABORATION_SUMMARY =
+            "Top collaborating pair: Employees {} and {} with total collaboration time of {} days across {} projects";
+    public static final String NO_COLLABORATIONS_FOUND = "No collaborations found";
 
     // CSV validation
     public static final String COMMA_DELIMITER = ",";
